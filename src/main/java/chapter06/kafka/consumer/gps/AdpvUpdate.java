@@ -8,17 +8,17 @@ import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.client.HTable;
 import org.apache.hadoop.hbase.util.Bytes;
 
-import backtype.storm.task.TopologyContext;
-import backtype.storm.topology.BasicOutputCollector;
-import backtype.storm.topology.IBasicBolt;
-import backtype.storm.topology.OutputFieldsDeclarer;
-import backtype.storm.tuple.Fields;
-import backtype.storm.tuple.Tuple;
+import org.apache.storm.task.TopologyContext;
+import org.apache.storm.topology.BasicOutputCollector;
+import org.apache.storm.topology.IBasicBolt;
+import org.apache.storm.topology.OutputFieldsDeclarer;
+import org.apache.storm.tuple.Fields;
+import org.apache.storm.tuple.Tuple;
 import chapter06.kafka.util.ConfigFactory;
 import chapter06.kafka.util.ConfigProperties;
 //import org.apache.hadoop.hbase.client.HBaseAdmin;
 //import net.sf.json.JSONObject;
-//import backtype.storm.tuple.Values;
+//import org.apache.storm.tuple.Values;
 
 //20140117        03      183.19.140.101  2014-01-17 03:44:51     {EFBA4702-B9B2-929A-B76D-BC4AA4E84942}  5.32.1227.1111  716     917     {"wid":"13","aid":"101853","vid":"1450739","adid":"32540","asid":"1","aspid":"1","mid":"16771","ptime":"","mg":"15,16,43,71,93,107,148,153,159,160,162,170,173,183,193","ag":"4,20,28,104,157,213,1869,1909","ecode":"0","type":"1","dpl":"0","adpid":"0","dsp":"0"}    中国    广东省  肇庆市  NULL
 

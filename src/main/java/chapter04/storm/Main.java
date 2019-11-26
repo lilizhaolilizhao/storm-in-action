@@ -1,14 +1,16 @@
 package chapter04.storm;
 
+//import backtype.storm.Config;
+//import backtype.storm.StormSubmitter;
+//import backtype.storm.topology.TopologyBuilder;
 
-import backtype.storm.Config;
-import backtype.storm.StormSubmitter;
-import backtype.storm.topology.TopologyBuilder;
+import org.apache.storm.Config;
+import org.apache.storm.StormSubmitter;
+import org.apache.storm.topology.TopologyBuilder;
 
-public class Main {	
+public class Main {
 
 	public static void main(String[] args) throws Exception {
-
 		TopologyBuilder builder = new TopologyBuilder();
 		builder.setSpout("spout", new ReaderSpout(), 4);
 		//4 the number of tasks that should be assigned to execute this spout

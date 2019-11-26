@@ -1,8 +1,7 @@
 package chapter08.storm.spout;
 
+import org.apache.storm.tuple.Fields;
 import java.io.Serializable;
-
-import backtype.storm.tuple.Fields;
 
 public class TupleInfo implements Serializable {
 	private static final long serialVersionUID = 8524559685781732841L;

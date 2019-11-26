@@ -7,12 +7,12 @@ import storm.kafka.KafkaConfig.StaticHosts;
 import storm.kafka.KafkaSpout;
 import storm.kafka.SpoutConfig;
 import storm.kafka.StringScheme;
-import backtype.storm.Config;
-import backtype.storm.StormSubmitter;
-import backtype.storm.generated.AlreadyAliveException;
-import backtype.storm.generated.InvalidTopologyException;
-import backtype.storm.topology.TopologyBuilder;
-import backtype.storm.tuple.Fields;
+import org.apache.storm.Config;
+import org.apache.storm.StormSubmitter;
+import org.apache.storm.generated.AlreadyAliveException;
+import org.apache.storm.generated.InvalidTopologyException;
+import org.apache.storm.topology.TopologyBuilder;
+import org.apache.storm.tuple.Fields;
 import chapter0203.bolt.SplitSentence;
 import chapter0203.bolt.WordCountBolt;
 
